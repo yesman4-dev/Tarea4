@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio14.View.MostrarImagen"
+             xmlns:converter="clr-namespace:Ejercicio14.converter">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ByteArrayToImage x:Key="ByteToImage"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" 
+               Padding="5" 
+               CornerRadius="0">
+
+                <Label Text="Ejercicio 1.4" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+
+            
+            <StackLayout>
+                <Image  
+                    Source="{Binding foto, Converter={StaticResource ByteToImage}}" />
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

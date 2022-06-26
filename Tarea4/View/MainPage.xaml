@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio14.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" 
+               Padding="24" 
+               CornerRadius="0">
+
+            <Label Text="Ejercicio 1.4" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+
+        <Image x:Name="foto" BackgroundColor="Bisque"
+                   WidthRequest="100" HeightRequest="170" />
+
+        <Button Text="Tomar foto" 
+                x:Name="btnFoto"
+                Clicked="btnFoto_Clicked"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                BackgroundColor="#2196F3" 
+                TextColor="White"
+                Margin="10"/>
+
+        <Label Text="Nombre:"/>
+        <Entry x:Name="nom" Keyboard="Text"/>
+
+        <Label Text="Descripcion:" />
+        <Entry x:Name="des" Keyboard="Text"/>
+
+        <Button Text="Guardar" 
+                x:Name="btnGuardar"
+                Clicked="btnGuardar_Clicked"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                BackgroundColor="#2196F3" 
+                TextColor="White"
+                Margin="10"/>
+
+        <Button Text="Lista" 
+                x:Name="btnLista"
+                Clicked="btnLista_Clicked"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                BackgroundColor="#2196F3" 
+                TextColor="White"
+                Margin="10"/>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
